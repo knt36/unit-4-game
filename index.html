@@ -8,31 +8,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <script src="assets/javascript/game.js"></script>
+
 </head>
 
 <body>
+
     <h1>CrystalCollector!</h1>
 
     <p>You will be given a random number at the start of the game.</p>
     <p> There are four crystals below. By clicking on a crystal, you will add a specifi amount of points to your total score.</p>
-    <p>You win the game by matching your total score to random number. You lose if your total score goes above the random
-        number.</p>
+    <p>You win the game by matching your total score to random number. You lose if your total score goes above the random number.
+    </p>
     <p>The value of each crystal in hidden from you until you click on it.</p>
     <p>Each time when the game starts, the game will change the values of each crystal</p>
 
-    <div id="rng">Random Number to match</div>
+    <div>Number to Get:
+        <span id="rng"></span>
+    </div>
 
-    <div id="win">Wins: 0</div>
-    <div id="lose">Losses: 0</div>
+    <div>Wins:
+        <span id="win"></span>
+    </div>
+    <div>Losses:
+        <span id="lose"></span>
+    </div>
 
-    <img id="crystal1" src="assets/images/41sLTbXkXZL._SL500_AC_SS350_.jpg">
-    <img id="crystal2" src="assets/images/800px_COLOURBOX5753664.jpg">
-    <img id="crystal3" src="assets/images/rbb.JPG">
-    <img id="crystal4" src="assets/images/zafír2.jpg">
-
+    <!-- <img id="crystal1" src="assets/images/41sLTbXkXZL._SL500_AC_SS350_.jpg">
+    <img id="crystal2" src="assets/images/round-diamond.jpg">
+    <img id="crystal3" src="assets/images/red-ruby-stone-500x500.jpg">
+    <img id="crystal4" src="assets/images/Melee_Sapphire_Blue_A_72ca4a79-7a1f-4676-a39b-05f60d004d93_1024x1024.png"> -->
+    <div id="crystalcreator"></div>
     <p>Your total score is:</p>
-    <div id="score">Current Score</div>
+    <div>Current Score:
+        <span id="score"></span>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
 
 </body>
 
