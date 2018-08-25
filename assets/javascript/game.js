@@ -53,7 +53,6 @@ $(document).ready(function () {
             $("#crystalcreator").append(crystal);
         }
         $(".crystal").on("click", function () {
-            console.log('click');
             var crystalvalue = ($(this).attr("crystalnumber"));
             crystalvalue = parseInt(crystalvalue);
     
